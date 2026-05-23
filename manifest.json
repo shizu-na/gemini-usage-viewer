@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Gemini Usage Viewer",
+  "version": "1.0",
+  "description": "Geminiの使用量とリセット時間をツールチップに表示します。",
+  "permissions": ["scripting"],
+  "host_permissions": ["https://gemini.google.com/*"],
+  
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  
+  "action": {
+    "default_title": "クリックして使用量を取得",
+    "default_badge_text": "",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
